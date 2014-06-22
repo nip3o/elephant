@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5762AED19561FE20016ED88 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5762AEC19561FE20016ED88 /* main.swift */; };
+		A5762AEF19561FE20016ED88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5762AEE19561FE20016ED88 /* AppDelegate.swift */; };
+		A5762AF119561FE20016ED88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5762AF019561FE20016ED88 /* Images.xcassets */; };
+		A5762AF419561FE20016ED88 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5762AF219561FE20016ED88 /* MainMenu.xib */; };
+		A5762B0019561FE20016ED88 /* elephantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5762AFF19561FE20016ED88 /* elephantTests.swift */; };
+		A5762B10195621FC0016ED88 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5762B0F195621FC0016ED88 /* DatabaseHelper.swift */; };
+		A5762B121956EF960016ED88 /* ConnectWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5762B111956EF960016ED88 /* ConnectWindow.xib */; };
+		A59FB19B19571A4E004DFE41 /* PGClientKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59FB19A19571A4E004DFE41 /* PGClientKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		A59FB19D19571A69004DFE41 /* PGClientKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A59FB19A19571A4E004DFE41 /* PGClientKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A59FB19F195720D6004DFE41 /* ExplorerWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A59FB19E195720D6004DFE41 /* ExplorerWindow.xib */; };
+		A59FB1A11957236B004DFE41 /* ExplorerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FB1A01957236B004DFE41 /* ExplorerController.swift */; };
+		A5E220F11957458B00780B79 /* DatabaseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E220F01957458B00780B79 /* DatabaseList.swift */; };
+		A5E220F51957790D00780B79 /* DatabaseListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E220F41957790D00780B79 /* DatabaseListDataSource.swift */; };
+		A5F631601956F0B900815AA1 /* Elephant-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5F6315F1956F0B900815AA1 /* Elephant-icon.png */; };
+		A5F631631956F42A00815AA1 /* ConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F631621956F42A00815AA1 /* ConnectionController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5762AFA19561FE20016ED88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5762ADF19561FE10016ED88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5762AE619561FE10016ED88;
+			remoteInfo = elephant;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A59FB19C19571A61004DFE41 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A59FB19D19571A69004DFE41 /* PGClientKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A5762AE719561FE10016ED88 /* elephant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = elephant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5762AEB19561FE20016ED88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5762AEC19561FE20016ED88 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A5762AEE19561FE20016ED88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5762AF019561FE20016ED88 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A5762AF319561FE20016ED88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A5762AF919561FE20016ED88 /* elephantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = elephantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5762AFE19561FE20016ED88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5762AFF19561FE20016ED88 /* elephantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elephantTests.swift; sourceTree = "<group>"; };
+		A5762B0E1956215B0016ED88 /* elephant-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "elephant-Bridging-Header.h"; sourceTree = "<group>"; };
+		A5762B0F195621FC0016ED88 /* DatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		A5762B111956EF960016ED88 /* ConnectWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectWindow.xib; sourceTree = "<group>"; };
+		A59FB19A19571A4E004DFE41 /* PGClientKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PGClientKit.framework; sourceTree = "<group>"; };
+		A59FB19E195720D6004DFE41 /* ExplorerWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExplorerWindow.xib; sourceTree = "<group>"; };
+		A59FB1A01957236B004DFE41 /* ExplorerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplorerController.swift; sourceTree = "<group>"; };
+		A5E220F01957458B00780B79 /* DatabaseList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseList.swift; sourceTree = "<group>"; };
+		A5E220F41957790D00780B79 /* DatabaseListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseListDataSource.swift; sourceTree = "<group>"; };
+		A5F6315F1956F0B900815AA1 /* Elephant-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Elephant-icon.png"; path = "elephant/Elephant-icon.png"; sourceTree = "<group>"; };
+		A5F631621956F42A00815AA1 /* ConnectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5762AE419561FE10016ED88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59FB19B19571A4E004DFE41 /* PGClientKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5762AF619561FE20016ED88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5762ADE19561FE10016ED88 = {
+			isa = PBXGroup;
+			children = (
+				A59FB19A19571A4E004DFE41 /* PGClientKit.framework */,
+				A5F631611956F30D00815AA1 /* Resources */,
+				A5762B0B195620170016ED88 /* Frameworks */,
+				A5762AE919561FE10016ED88 /* elephant */,
+				A5762AFC19561FE20016ED88 /* elephantTests */,
+				A5762AE819561FE10016ED88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5762AE819561FE10016ED88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5762AE719561FE10016ED88 /* elephant.app */,
+				A5762AF919561FE20016ED88 /* elephantTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5762AE919561FE10016ED88 /* elephant */ = {
+			isa = PBXGroup;
+			children = (
+				A5762AEE19561FE20016ED88 /* AppDelegate.swift */,
+				A5762AF019561FE20016ED88 /* Images.xcassets */,
+				A5762AF219561FE20016ED88 /* MainMenu.xib */,
+				A5762AEA19561FE20016ED88 /* Supporting Files */,
+				A5762B0E1956215B0016ED88 /* elephant-Bridging-Header.h */,
+				A5762B0F195621FC0016ED88 /* DatabaseHelper.swift */,
+				A5762B111956EF960016ED88 /* ConnectWindow.xib */,
+				A5F631621956F42A00815AA1 /* ConnectionController.swift */,
+				A59FB19E195720D6004DFE41 /* ExplorerWindow.xib */,
+				A59FB1A01957236B004DFE41 /* ExplorerController.swift */,
+				A5E220F01957458B00780B79 /* DatabaseList.swift */,
+				A5E220F41957790D00780B79 /* DatabaseListDataSource.swift */,
+			);
+			path = elephant;
+			sourceTree = "<group>";
+		};
+		A5762AEA19561FE20016ED88 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5762AEB19561FE20016ED88 /* Info.plist */,
+				A5762AEC19561FE20016ED88 /* main.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5762AFC19561FE20016ED88 /* elephantTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5762AFF19561FE20016ED88 /* elephantTests.swift */,
+				A5762AFD19561FE20016ED88 /* Supporting Files */,
+			);
+			path = elephantTests;
+			sourceTree = "<group>";
+		};
+		A5762AFD19561FE20016ED88 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5762AFE19561FE20016ED88 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5762B0B195620170016ED88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5F631611956F30D00815AA1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5F6315F1956F0B900815AA1 /* Elephant-icon.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5762AE619561FE10016ED88 /* elephant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5762B0319561FE20016ED88 /* Build configuration list for PBXNativeTarget "elephant" */;
+			buildPhases = (
+				A5762AE319561FE10016ED88 /* Sources */,
+				A5762AE419561FE10016ED88 /* Frameworks */,
+				A5762AE519561FE10016ED88 /* Resources */,
+				A59FB19C19571A61004DFE41 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = elephant;
+			productName = elephant;
+			productReference = A5762AE719561FE10016ED88 /* elephant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5762AF819561FE20016ED88 /* elephantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5762B0619561FE20016ED88 /* Build configuration list for PBXNativeTarget "elephantTests" */;
+			buildPhases = (
+				A5762AF519561FE20016ED88 /* Sources */,
+				A5762AF619561FE20016ED88 /* Frameworks */,
+				A5762AF719561FE20016ED88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5762AFB19561FE20016ED88 /* PBXTargetDependency */,
+			);
+			name = elephantTests;
+			productName = elephantTests;
+			productReference = A5762AF919561FE20016ED88 /* elephantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5762ADF19561FE10016ED88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Niclas Olofsson";
+				TargetAttributes = {
+					A5762AE619561FE10016ED88 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					A5762AF819561FE20016ED88 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = A5762AE619561FE10016ED88;
+					};
+				};
+			};
+			buildConfigurationList = A5762AE219561FE10016ED88 /* Build configuration list for PBXProject "elephant" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5762ADE19561FE10016ED88;
+			productRefGroup = A5762AE819561FE10016ED88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5762AE619561FE10016ED88 /* elephant */,
+				A5762AF819561FE20016ED88 /* elephantTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5762AE519561FE10016ED88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5762B121956EF960016ED88 /* ConnectWindow.xib in Resources */,
+				A59FB19F195720D6004DFE41 /* ExplorerWindow.xib in Resources */,
+				A5762AF119561FE20016ED88 /* Images.xcassets in Resources */,
+				A5762AF419561FE20016ED88 /* MainMenu.xib in Resources */,
+				A5F631601956F0B900815AA1 /* Elephant-icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5762AF719561FE20016ED88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5762AE319561FE10016ED88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E220F11957458B00780B79 /* DatabaseList.swift in Sources */,
+				A5E220F51957790D00780B79 /* DatabaseListDataSource.swift in Sources */,
+				A5762AEF19561FE20016ED88 /* AppDelegate.swift in Sources */,
+				A5F631631956F42A00815AA1 /* ConnectionController.swift in Sources */,
+				A59FB1A11957236B004DFE41 /* ExplorerController.swift in Sources */,
+				A5762B10195621FC0016ED88 /* DatabaseHelper.swift in Sources */,
+				A5762AED19561FE20016ED88 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5762AF519561FE20016ED88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5762B0019561FE20016ED88 /* elephantTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5762AFB19561FE20016ED88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5762AE619561FE10016ED88 /* elephant */;
+			targetProxy = A5762AFA19561FE20016ED88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5762AF219561FE20016ED88 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5762AF319561FE20016ED88 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5762B0119561FE20016ED88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5762B0219561FE20016ED88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A5762B0419561FE20016ED88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = elephant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				"OTHER_CODE_SIGN_FLAGS[sdk=*]" = "--deep";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "elephant/elephant-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		A5762B0519561FE20016ED88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = elephant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "elephant/elephant-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		A5762B0719561FE20016ED88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/elephant.app/Contents/MacOS/elephant";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = elephantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		A5762B0819561FE20016ED88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/elephant.app/Contents/MacOS/elephant";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = elephantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5762AE219561FE10016ED88 /* Build configuration list for PBXProject "elephant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5762B0119561FE20016ED88 /* Debug */,
+				A5762B0219561FE20016ED88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5762B0319561FE20016ED88 /* Build configuration list for PBXNativeTarget "elephant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5762B0419561FE20016ED88 /* Debug */,
+				A5762B0519561FE20016ED88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5762B0619561FE20016ED88 /* Build configuration list for PBXNativeTarget "elephantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5762B0719561FE20016ED88 /* Debug */,
+				A5762B0819561FE20016ED88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5762ADF19561FE10016ED88 /* Project object */;
+}
