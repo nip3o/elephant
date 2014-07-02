@@ -19,14 +19,12 @@
                     <popUpButton verticalHuggingPriority="750" id="vGe-28-D5W">
                         <rect key="frame" x="12" y="470" width="199" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <popUpButtonCell key="cell" type="push" title="Select Database" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" pullsDown="YES" selectedItem="TcR-Xt-r0s" id="Qsb-VN-h7b">
+                        <popUpButtonCell key="cell" type="push" title="Select Database" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" pullsDown="YES" id="Qsb-VN-h7b">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="menu"/>
                             <menu key="menu" id="A72-Pl-Q4v">
                                 <items>
                                     <menuItem title="Select Database" state="on" hidden="YES" id="TcR-Xt-r0s"/>
-                                    <menuItem title="Item 2" id="p8y-sJ-LE7"/>
-                                    <menuItem title="Item 3" id="zw9-q5-t4Y"/>
                                 </items>
                             </menu>
                         </popUpButtonCell>
@@ -46,7 +44,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowHeight="24" rowSizeStyle="systemDefault" indentationPerLevel="16" outlineTableColumn="yXJ-rW-dKQ" id="PAF-x6-5s0">
-                                            <rect key="frame" x="0.0" y="0.0" width="106" height="24"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="171" height="24"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="0.0"/>
                                             <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -166,56 +164,14 @@
         <customObject id="Gaq-5b-a1a" customClass="ExplorerController" customModule="elephant" customModuleProvider="target">
             <connections>
                 <outlet property="databaseDropdown" destination="vGe-28-D5W" id="wvp-R9-9hD"/>
-                <outlet property="databaseSelect" destination="vGe-28-D5W" id="cHJ-r2-tN8"/>
             </connections>
         </customObject>
         <customObject id="ThJ-Qc-2w1" customClass="DatabaseList" customModule="elephant" customModuleProvider="target"/>
         <customObject id="gyL-sT-7XH" customClass="DatabaseListDataSource" customModule="elephant" customModuleProvider="target"/>
-        <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="FKv-dc-qmE">
-            <rect key="frame" x="0.0" y="0.0" width="240" height="135"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-            <clipView key="contentView" id="bRk-Q5-S7o">
-                <rect key="frame" x="1" y="17" width="238" height="117"/>
-                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                <subviews>
-                    <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" headerView="66l-mf-3t7" indentationPerLevel="16" outlineTableColumn="3ys-Vh-qXA" id="9kQ-EH-K94">
-                        <rect key="frame" x="0.0" y="0.0" width="119" height="19"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <size key="intercellSpacing" width="3" height="2"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
-                        <tableColumns>
-                            <tableColumn identifier="AutomaticTableColumnIdentifier.1" width="116" minWidth="40" maxWidth="1000" id="3ys-Vh-qXA">
-                                <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
-                                    <font key="font" metaFont="smallSystem"/>
-                                    <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
-                                </tableHeaderCell>
-                                <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="ntX-lX-MyJ">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                                <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                            </tableColumn>
-                        </tableColumns>
-                    </outlineView>
-                </subviews>
-                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-            </clipView>
-            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="sAG-5e-qay">
-                <rect key="frame" x="1" y="118.81449538469315" width="237.59061050415039" height="15"/>
-                <autoresizingMask key="autoresizingMask"/>
-            </scroller>
-            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="6ve-CY-wfl">
-                <rect key="frame" x="224" y="17" width="15" height="102"/>
-                <autoresizingMask key="autoresizingMask"/>
-            </scroller>
-            <tableHeaderView key="headerView" id="66l-mf-3t7">
-                <rect key="frame" x="0.0" y="0.0" width="238" height="17"/>
-                <autoresizingMask key="autoresizingMask"/>
-            </tableHeaderView>
-            <point key="canvasLocation" x="633" y="533.5"/>
-        </scrollView>
+        <arrayController objectClassName="String" id="v0r-kQ-TBc">
+            <connections>
+                <binding destination="Gaq-5b-a1a" name="contentArray" keyPath="databaseNames" id="uLx-3x-odF"/>
+            </connections>
+        </arrayController>
     </objects>
 </document>

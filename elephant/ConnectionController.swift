@@ -37,4 +37,11 @@ class ConnectionController: NSWindowController {
 
     }
     
+    override func windowDidLoad() {
+        super.windowDidLoad()
+        
+        println("ConnectionWindow was loaded")
+    }
+    
+    
 }

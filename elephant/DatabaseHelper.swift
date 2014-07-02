@@ -38,7 +38,7 @@ class DatabaseHelper {
         
     }
 
-    func connectToDatebase(user: NSString, host: NSString, port: NSInteger, database: NSString, error: NSErrorPointer) -> Bool {
+    func connectToDatabase(user: NSString, host: NSString, port: NSInteger, database: NSString, error: NSErrorPointer) -> Bool {
         self.connection = PGConnection()
         let url: NSURL = NSURL(string: "postgresql://\(user)@\(host):\(port)/\(database)")
         

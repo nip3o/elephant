@@ -24,6 +24,6 @@ class DatabaseListDataSource : NSObject, NSOutlineViewDataSource {
     
     func outlineView(outlineView: NSOutlineView!, objectValueForTableColumn tableColumn: NSTableColumn!, byItem item: AnyObject!) -> AnyObject! {
         // Select the name from the object
-        return "Some database"
+        return "Some table"
     }
 }

@@ -11,14 +11,24 @@ import Cocoa
 
 
 class ExplorerController: NSWindowController, NSOutlineViewDelegate {
-    @IBOutlet var databaseNames: NSMutableArray = NSMutableArray()
+    var databaseNames = ["Kaka 1337", "Kaka 1234"]
+    
     @IBOutlet var databaseDropdown: NSPopUpButton
+
     
     @IBAction func databaseSelected(AnyObject) {
-        var name = databaseDropdown.titleOfSelectedItem
-        println("DB \(name) selected")
+        //var name = databaseDropdown.titleOfSelectedItem
+        //println("DB \(name) selected")
     
     }
+    
+    override func windowDidLoad() {
+        super.windowDidLoad()
+        
+        println("ExplorerWindow was loaded")
+        
+        //        databaseDropdown.addItemWithTitle("Meep")
+}
     
     func outlineView(outlineView: NSOutlineView!, shouldExpandItem item: AnyObject!) -> Bool {
         return false

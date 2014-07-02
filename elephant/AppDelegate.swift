@@ -9,14 +9,15 @@
 import Cocoa
 
 class AppDelegate: NSObject, NSApplicationDelegate {
-                            
     @IBOutlet var window: NSWindow
+    var connectController: ConnectionController? = nil
 
 
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
-        // Insert code here to initialize your application
-        println("App loaded")
-
+        self.connectController = ConnectionController(windowNibName: "ConnectionWindow")
+        
+        
+        self.connectController!.showWindow(self)
     }
 
     func applicationWillTerminate(aNotification: NSNotification?) {
